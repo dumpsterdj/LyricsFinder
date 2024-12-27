@@ -100,11 +100,11 @@ Lyrics Finder/
 
 ### **Homepage**
 A sleek and user-friendly search page:
-![Homepage](screenshots/homepage.png)
+![Homepage](screenshots/Home.png)
 
 ### **Lyrics Page**
 Lyrics, album metadata, and cover art presented professionally:
-![Lyrics Page](screenshots/lyrics.png)
+![Lyrics Page](screenshots/Lyrics.png)
 
 ---
 
