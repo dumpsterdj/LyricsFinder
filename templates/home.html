@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics Finder</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script defer src="/static/script.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Find Song Lyrics</h1>
+        <p>Discover the lyrics of your favorite songs instantly!</p>
+    </header>
+    <main>
+        <form class="search-form" action="/search" method="post">
+            <input type="text" name="artist" placeholder="Artist Name" required>
+            <input type="text" name="song" placeholder="Song Title" required>
+            <button type="submit">Search Lyrics</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Lyrics Finder. Dhruvjeet Singh @dumpsterdj.</p>
+    </footer>
+</body>
+</html>

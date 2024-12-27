@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script defer src="/static/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Lyrics Finder</h1>
+    </header>
+    <main>
+        <section class="song-info">
+            <div class="cover-image">
+                {% if cover_image_url %}
+                <img src="{{ cover_image_url }}" alt="Song Cover" class="song-cover">
+                {% endif %}
+            </div>
+            <div class="metadata">
+                <h2>{{ song }} By {{ artist }}</h2>
+                <p><strong>Album:</strong> {{ album }}</p>
+                <p><strong>Release Date:</strong> {{ release_date }}</p>
+                <p><strong>Genre:</strong> {{ genre }}</p>
+                {% if preview_url %}
+                <audio controls>
+                    <source src="{{ preview_url }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                {% endif %}
+            </div>
+        </section>
+
+        <section class="lyrics-container">
+            <h2 id="lyrics-title">Lyrics</h2>
+            <div class="lyrics-box">
+                {% if lyrics %}
+                <pre id="lyrics-text">{{ lyrics }}</pre>
+                {% else %}
+                <p class="error-text">{{ error }}</p>
+                {% endif %}
+            </div>
+            <div class="action-links">
+                <a href="/">Search Another Song</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Lyrics Finder. Dhruvjeet Singh @dumpsterdj.</p>
+    </footer>
+</body>
+</html>
