@@ -64,9 +64,6 @@ Open your browser and navigate to:
 
 ```
 Lyrics Finder/
-├── endpoints/
-│   ├── coverimg.py          # Fetch song metadata and cover images from iTunes API
-│
 ├── static/
 │   ├── style.css            # Styling for the web app
 │   ├── script.js            # JavaScript animations
@@ -75,6 +72,7 @@ Lyrics Finder/
 │   ├── home.html            # Homepage template for search
 │   ├── lyrics.html          # Results page template
 │
+├── coverimg.py              # Fetch song metadata and cover images from iTunes API
 ├── main.py                  # Entry point for the application
 ├── requirements.txt         # Dependencies for the project
 ├── README.md                # Project documentation
